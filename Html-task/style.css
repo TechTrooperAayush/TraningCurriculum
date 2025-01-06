@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{  
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.container{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content:center;
+    align-items: flex-start;
+}
+
+.Form-box{
+    margin-top: 30px;
+    border-radius: 9px;
+    background: #ffffff;
+    box-shadow: 0 20px 30px rgba(0, 0,0, 0.15),
+                0 -10px 20px rgba(0, 0,0, 0.15);
+    width: 550px;
+}
+
+form{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+h1{
+    font-weight: 800;
+    color: #0d6efd;
+}
+
+.names{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.fname{
+    width: 48%;
+}
+
+.lname{
+    width: 48%;
+}
+
+label{
+    margin-bottom: 10px;
+    margin-left: 5px;
+}
+
+input{
+    padding: 11px 30px;
+    border-radius: 11px;
+    outline: none;
+    border:2.5px solid rgba(128, 128, 128, 0.418);
+    width: 100%;
+}
+
+.space-area{
+    width: 100%;
+    margin-top: 20px;
+}
+
+.checkblock{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.checkblock > label {
+    margin-left: 20px;
+}
+
+#checkmark{
+    height: 20px;
+    width: 40px;
+    border:3px solid rgba(128, 128, 128, 0.418);
+    align-self: self-start;
+    margin-top: 10px;
+    
+}
+
+#checkmark:focus{
+    outline: none;
+}
+
+.submit-btn{
+    width: 80%;
+    border-radius: 9px;
+    outline: none;
+    background-color:#0d6efd;
+    border:1px solid #0d6efd;
+    padding: 11px 30px;
+    font-size: 16px;
+    color: white;
+    margin-top: 10px;
+}
+
+input:focus{
+    outline:2px solid #0d6efd;
+    border: none;
+}
+
+.google-btn{
+    position: relative;
+    width: 80%;
+    border-radius: 9px;
+    outline: none;
+    background-color:#ffffff;
+    border:1px solid #0d6efd;
+    padding: 11px 30px;
+    margin-top:5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 10px;
+    color:#0d6efd;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.google-btn>svg{
+    position: relative;
+    height: 22px;
+    width: 22px;
+    z-index: 10;
+}
+
+.btn:hover{
+    cursor: pointer;
+    color: #0d6efd;
+    background-color: #ffffff;
+}
