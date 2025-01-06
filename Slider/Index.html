@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slider</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        html,body{
+            height: 100%;
+            width: 100%;
+        }
+
+        .container{
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #333333;
+        }
+
+        .slider{
+            height: 550px;
+            width: 750px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: space-evenly;
+            padding: 20px;
+        }
+
+        .slides{
+            height: 450px;
+            width: 100%;
+            border-radius: 23px;
+            display: flex;
+            background-color: white;
+            justify-content:center;
+            align-items: center;
+            column-gap: 20px;
+            /* padding-left: 25px; */
+        }
+
+        img{
+            height: 90%;
+            width: 90%;
+            object-fit: cover;
+            border-radius: 23px;
+            display:none;
+        }   
+
+        .buttons{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            column-gap: 30px;
+        }
+
+        .btn{
+            background-color: blueviolet;
+            padding: 9px 20px;
+            color: white;
+            font-weight: 600;
+            outline: none;
+            border: none;
+            border-radius: 21px;
+            cursor: pointer;
+        }
+        
+        .btn:hover{
+            background-color:rgb(178, 109, 243) ;
+        }
+
+        .active {
+            display: flex;
+        }
+    
+
+    </style>
+</head>
+<body>
+    <main class="container">
+        <section class="slider">
+            <div class="slides">
+                <img src="https://images.pexels.com/photos/1054777/pexels-photo-1054777.jpeg?auto=compress&cs=tinysrgb&w=600" alt="reload-page">
+                <img src="https://images.pexels.com/photos/26924196/pexels-photo-26924196/free-photo-of-an-elephant-in-a-field.jpeg?auto=compress&cs=tinysrgb&w=600" alt="reload-page">
+                <img src="https://images.pexels.com/photos/4458420/pexels-photo-4458420.jpeg?auto=compress&cs=tinysrgb&w=600" alt="reload-page">
+                <img src="https://images.pexels.com/photos/5708069/pexels-photo-5708069.jpeg?auto=compress&cs=tinysrgb&w=600" alt="reload-page">
+                <div class="dots">
+                
+                </div>
+            </div>
+            <div class="buttons">
+                <button class="btn prev">
+                    Prev
+                </button>
+                <button class="btn next">
+                    Next
+                </button>
+            </div>
+        </section>
+    </main>
+    <script>
+        let slides = document.querySelectorAll('.slides img');
+        let slider = document.querySelector('.slider');
+        let index = 0;
+        let interval = true;
+        let prev = document.querySelector(".prev");
+        let next = document.querySelector(".next");
+        let autotimer;
+
+        function intial(){
+            slides[index].classList.add('active');
+            if(interval)
+        {
+            autotimer = setInterval(() => {
+                Nextslide()
+            },2000);
+        }
+        }
+
+        intial();
+
+        function Prevslide(){
+            slides[index].classList.remove('active');
+            index--;
+            console.log(index);
+            if(index < 0 )
+        {
+            index = slides.length-1;
+        }
+        slides[index].classList.add('active');
+        }
+
+        function Nextslide(){
+            slides[index].classList.remove('active');
+            index++;
+            console.log(index);
+            console.log("working");
+            if(index >= slides.length )
+        {
+            index = 0;
+        }
+        slides[index].classList.add('active');
+        }
+        
+        slider.addEventListener("mouseover",function(){
+            if(interval)
+        {
+            clearInterval(autotimer);
+            interval = false;
+            console.log("worked");
+        }
+        });
+
+        slider.addEventListener("mouseout",function(){
+            if(!interval)
+        {
+            clearInterval(autotimer);
+            interval = true;
+            autotimer = setInterval(Nextslide,1200)
+            console.log("worked");
+        }
+        });
+
+        prev.addEventListener("click",Prevslide);
+        next.addEventListener("click",Nextslide);
+
+    </script>
+</body>
+</html>
