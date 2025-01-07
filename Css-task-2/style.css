@@ -1,0 +1,611 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Space Grotesk", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    scroll-behavior: smooth;
+}
+
+.container{
+    height: auto;
+    width: 1440px;
+    background-color: #2e2e2e;
+    position: relative;
+    margin: 0 auto;
+}
+
+/* ----- header section css ---------------- */
+
+.navbar{
+    position: static;
+    top: 0;
+    padding: 25px 55px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    z-index: 100;
+    content: "";
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo svg{
+    transform: rotate(45deg);
+    width: 44px;
+    height: 44px;
+}
+
+.logo h3{
+    font-weight: 500;
+    font-size: 35px;
+}
+
+.nav-links{
+    display: flex;
+    column-gap: 30px;
+    align-items: center;
+}
+
+.nav-links a{
+    text-decoration: none;
+    color: black;
+    font-weight: 400;
+    cursor: pointer;
+    position: relative;
+    font-size: 20px;
+}
+
+.nav-links .nav-btn{
+    cursor: pointer;
+    outline: none;
+    padding: 20px 35px;
+    border-radius: 14px;
+    border: 1px solid black;
+    font-size: 18px;
+    transition: 0.3s;
+    background-color: transparent;
+}
+
+.nav-btn:hover{
+    background-color: black;
+    color: white;
+}
+
+.nav-links a:after{
+    position: absolute;
+    bottom: -15px;
+    left: 0;
+    content: '';
+    height: 3px;
+    width: 0;
+    background-color: black;
+    margin-top: 17px;
+    border-radius: 13px;
+}
+
+.nav-links a:hover::after{
+    animation: forwardline 0.3s ease forwards;
+    width: 100%;
+}
+
+@keyframes forwardline {
+0%{
+    width: 0;
+}
+100%{
+    width: 100%;
+}
+}
+
+/* ----- hero section css ---------------- */
+
+.hero-section{
+    position: relative;
+    padding: 35px 55px;
+    background-color:white;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    column-gap: 10px;
+    flex-wrap: wrap;
+}
+
+.hero-content{
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    row-gap:35px;
+    width: 40vw;
+    padding-top: 10px;
+}
+
+.hero-content h2{
+    font-size: 60px;
+    font-weight: 600;
+}
+
+.hero-content p{
+    font-size: 18px;
+}
+
+.hero-img{
+    width: 31vw;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+}
+
+.hero-btn{
+    cursor: pointer;
+    outline: none;
+    padding: 17px 20px;
+    border-radius: 17px;
+    border: 1px solid black;
+    font-size: 17px;
+    transition: 0.3s;
+    background-color: black;
+    color: white;
+    width: 300px;
+}
+
+.hero-btn:hover{
+    background-color: white;
+    color: black;
+}
+
+/* ----- marquee section css ---------------- */
+
+.marquee-section{
+    position: relative;
+    display: flex;
+    padding:35px 55px ;
+    justify-content: space-between;
+    align-items: center;
+    background-color:white
+}
+
+.marquee-section img{
+    width: 8.5vw;
+    filter: grayscale(1);
+}
+
+/* ----- services section css ---------------- */
+
+.services-section{
+    padding: 80px 55px 20px 55px;
+    background-color: white;
+}
+
+.service-head{
+    display: flex;
+    justify-content: flex-start;
+    column-gap: 40px;
+    align-items: center;
+}
+
+.service-head > h2:first-child{
+    background-color: #B9FF66;
+    padding: 5px;
+    border-radius: 6px;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.service-card{
+    padding: 80px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    row-gap: 40px;
+}
+
+.card{
+        padding: 38px 30px;
+        width: 530px;
+        border-radius: 19px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        border: 2px solid black;
+        column-gap: 50px;
+        box-shadow: 0px 6px 0px 2px rgba(0,0,0,1);
+}
+
+.service-content h2{
+    background-color: #B9FF66;
+    padding: 5px;
+}
+
+.service-btns{
+    margin-top: 60px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.service-btn{
+    border-radius: 50%;
+    background-color: #000000;
+    color: #B9FF66;
+    height: 40px;
+    width: 40px;
+    border: 1px solid black;
+}
+
+.service-btn:hover svg{
+    background-color: #B9FF66;
+    fill: #000000;
+    border-radius: 50%;
+    z-index: 20;
+}
+
+.service-btns a {
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.service-btns a:hover{
+    text-decoration: underline;
+}
+
+.card-2{
+    background-color: #B9FF66;
+}
+
+.card-2 .service-content h2{ 
+    background-color: white;
+    color: black;
+}
+
+.card-3{
+    background-color: #000000;
+}
+
+.card-3 .service-content h2{ 
+    background-color: white;
+    color: black;
+}
+
+.card-3 .service-btns .service-btn{
+    background-color: white;
+    fill: black;
+    color: #000000;
+}
+
+.card-3 .service-btns .service-btn:hover svg{
+    background-color: black;
+    fill:white;
+}
+
+.card-3  .service-btns a {
+    color: white
+}
+
+.card-3 .service-btns a:hover{
+    text-decoration: underline;
+}
+
+.card-3 .service-img {
+    height:170px;
+}
+
+.card-4{
+    background-color: #B9FF66;
+}
+
+.card-4 .service-content h2{ 
+    background-color: white;
+    color: black;
+}
+
+
+.card-6{
+    background-color: #000000;
+}
+
+.card-6 .service-content h2{ 
+    background-color: #B9FF66;
+    color: black;
+}
+
+.card-6 .service-btns .service-btn{
+    background-color: white;
+    fill: black;
+    color: #000000;
+}
+
+.card-6 .service-btns .service-btn:hover svg{
+    background-color: black;
+    fill:white;
+}
+
+.card-6  .service-btns a {
+    color: white
+}
+
+.card-6 .service-btns a:hover{
+    text-decoration: underline;
+}
+
+.card-6 .service-img {
+    height:190px;
+}
+
+/* ----- proposal section css ---------------- */
+
+.proposal-section{
+    padding: 5px 140px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: white;
+}
+
+.proposal-content{
+    width: 520px;
+    display: flex;
+    row-gap: 26px;
+    flex-direction: column;
+    align-items:flex-start;
+}
+
+.proposal-content h2{
+    font-weight: 600;
+}
+
+.proposal-content p{
+    padding-right: 30px;
+}
+
+.proposal-btn{
+    cursor: pointer;
+    outline: none;
+    padding: 17px 20px;
+    border-radius: 17px;
+    border: 1px solid black;
+    font-size: 17px;
+    transition: 0.3s;
+    background-color: black;
+    color: white;
+    width: 300px;
+}
+
+.proposal-btn:hover{
+    background-color: white;
+    color: black;
+}
+
+/* ----- case-study section css ---------------- */
+
+.case-study-section{
+    padding: 80px 55px 40px 55px;
+    background-color: white;
+    width: 100%;
+}
+
+.case-study-head{
+    display: flex;
+    justify-content: flex-start;
+    column-gap: 40px;
+    align-items: center;
+}
+
+.case-study-head > h2:first-child{
+    background-color: #B9FF66;
+    padding: 5px;
+    border-radius: 6px;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+
+.case-study-section .case-content{
+    margin-top: 60px;
+    padding: 40px 30px 50px 30px;
+    width: 100%;
+    border-radius: 19px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    border: 2px solid black;
+    background-color: #000000;
+    column-gap: 10px;
+    box-shadow: 0px 6px 0px 2px rgba(0,0,0,1);
+    flex-wrap: wrap;
+}
+
+.case{
+    height: 160px;
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.case p{
+    color: white;
+}
+
+.case-btn-block{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    column-gap: 10px;
+    align-self: flex-start;
+}
+
+.case-btn-block .case-btn{
+    height: 40px;
+    width: 40px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+.case-btn-block .case-btn svg {
+    fill: #B9FF66;
+}
+
+
+.case-btn-block .case-btn:hover svg{
+    fill: white;
+}
+
+.case-btn-block a {
+    color:#B9FF66;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.case-btn-block a:hover{
+    text-decoration: underline;
+    color: white;
+}
+
+.case-2 {
+    width: 300px;
+    padding: 0px 30px;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+}
+
+/* ----- contact section css ---------------- */
+
+.contact-section
+{
+    padding: 80px 55px 20px 55px;
+    background-color: white;
+}
+
+.contact-content{
+    display: flex;
+    justify-content: flex-start;
+    column-gap: 40px;
+    align-items: center;
+}
+
+.contact-content > h2{
+    background-color: #B9FF66;
+    padding: 5px;
+    border-radius: 6px;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.form-box{
+    width: 100%;
+    padding: 30px 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: white;
+}
+
+.contact-form{
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+    width: 50%;
+}
+
+.radios-block{
+    display: flex;
+    width: 100%;
+    align-items: flex-start;
+    column-gap: 20px;
+}
+
+label input {
+    accent-color: #B9FF66;
+}
+
+label{
+    margin-bottom: 10px;
+    margin-left: 5px;
+}
+
+.fullname,.Email,.Message{
+    width: 100%;
+}
+
+
+input[type='text']{
+    padding: 11px 30px;
+    border-radius: 11px;
+    outline: none;
+    border:2.5px solid rgba(128, 128, 128, 0.418);
+    width: 100%;
+    margin-top: 10px;
+}
+
+input[type='email']{
+    padding: 11px 30px;
+    border-radius: 11px;
+    outline: none;
+    border:2.5px solid rgba(128, 128, 128, 0.418);
+    width: 100%;
+    margin-top: 10px;
+}
+
+.Message{
+    display: flex;
+    flex-direction: column;
+}
+
+#message{
+    height: 140px;
+    padding: 10px;
+    border:2.5px solid rgba(128, 128, 128, 0.418);
+    outline: none;
+    border-radius: 10px;
+}
+
+.submit-btn{
+    cursor: pointer;
+    outline: none;
+    padding: 14px 20px;
+    border-radius: 17px;
+    border: 1px solid black;
+    font-size: 17px;
+    transition: 0.3s;
+    background-color: black;
+    color: white;
+    width: 300px;
+}
+
+.submit-btn:hover{
+    background-color: white;
+    color: black;
+}
+
+.contact-img{
+    width: 40%;
+    /* border: 2px solid red; */
+}
+
+.contact-img img{
+    margin-left: 180px;
+    height: 500px;
+    width: 500px;
+}
