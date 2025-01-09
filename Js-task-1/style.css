@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Outfit", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  box-sizing: border-box;
+}
+
+.container {
+  height: auto;
+  max-width: 1440px;
+  position: relative;
+  margin: 0 auto;
+}
+
+.counter {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.counting-box {
+  margin-top: 120px;
+  height: 300px;
+  width: 30%;
+  background-color: white;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+  column-gap: 50px;
+}
+
+.count-status {
+  font-size: 74px;
+  font-weight: 600;
+}
+
+.btn {
+  padding: 5px 20px;
+  font-size: 45px;
+  background-color: #000000;
+  color: white;
+  outline: none;
+  border: 2px solid white;
+  cursor: pointer;
+  transition: 0.4s;
+  border-radius: 30px;
+}
+
+.btn:hover {
+  background-color: white;
+  color: #000000;
+  border: 2px solid #000000;
+}
