@@ -11,17 +11,77 @@
     <section class="hero-section">
         <img src="./assets/Group 1.svg" alt="reload-page" class="hero-logo">
         <div class="hero-content">
-            <img src="./assets/her0-section-img-2.svg" alt="" class="hero-img">
             <div class="hero-heading">
-                <h2 class="hero-head">Manage You Task Checklist Easily</h2>
-                <button class=" btn hero-btn">Lets Start</button>
+                <h2 class="hero-head">Manage You Task <br> Checklist Easily</h2>
+                <img src="./assets/her0-section-img-2.svg" alt="" class="hero-img">
+                <button class=" btn hero-btn" onclick="loginPage()">Lets Start</button>
+            </div>
+        </div>
+    </section>
+    <section class="login-page-section">
+        <button class="back-home-btn" onclick="Backhome()">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M7.82843 10.9999H20V12.9999H7.82843L13.1924 18.3638L11.7782 19.778L4 11.9999L11.7782 4.22168L13.1924 5.63589L7.82843 10.9999Z"></path></svg>
+        </button>
+        <div class="login-content">
+            <h1>Log in to <span>Todo<i>karo</i></span> </h1>
+            <form class="login-form">
+                <div class="Email">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Enter your mail.." class="log-in-email"  required>
+                </div>
+                <div class="Password">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Enter your password.." class="log-in-password"  required>
+                </div>
+                <button type="submit" class=" btn submit-btn" onsubmit="Todopage()">Continue</button>
+                <h2>or</h2>
+                <a class="" href="#" onclick="signup()">Don't have an account? Sign Up</a>
+            </form>
+        </div>
+    </section>
+    <section class="sign-up-section">
+        <button class="back-home-btn" onclick="Backhome()">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M7.82843 10.9999H20V12.9999H7.82843L13.1924 18.3638L11.7782 19.778L4 11.9999L11.7782 4.22168L13.1924 5.63589L7.82843 10.9999Z"></path></svg>
+        </button>
+        <div class="login-content">
+            <h1>Sign up to <span>Todo<i>karo</i></span> </h1>
+            <form class="login-form sign-up-form">
+                <div class="fullname">
+                    <label for="firstname">Name</label>
+                    <input type="text" id="firstname" placeholder="Enter your name.." class="sign-up-name" required>
+                </div>
+                <div class="Email">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Enter your mail.." class="sign-up-email"  required>
+                </div>
+                <div class="Password">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Enter your password.." class="sign-up-password"  required>
+                </div>
+                <button type="submit" class=" btn submit-btn" onsubmit="loginPage(event)">Continue</button>
+                <h2>or</h2>
+                <a class="" href="#" onclick="loginPage()">Log in to account</a>
+            </form>
+        </div>
+    </section>
+    <section class="todo-section">
+        <div class="todo-content">
+            <nav class="todo-head">
+                <div class="spans"> 
+                    <span class="username">Hi Shyam </span>
+                    <span class="usertasks">5 tasks pending</span>
+                </div>
+                <img src="./assets/Group 1.svg" alt="reload-page" class="todo-logo">
+                <button class="log-out-btn" onclick="Backhome()">Log out</button>
+            </nav>
+            <div class="todo-box">
+
             </div>
         </div>
     </section>
 </main>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="wavy">
-    <path fill="#B47AEA " fill-opacity="1" d="M0,192L120,208C240,224,480,256,720,250.7C960,245,1200,203,1320,181.3L1440,160L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"></path>
-  </svg>
+<svg xmlns="http://www.w3.org/2000/svg" class="wavy" viewBox="0 160 1440 160">     <path fill="#B47AEA " fill-opacity="1" d="M0,192L120,208C240,224,480,256,720,250.7C960,245,1200,203,1320,181.3L1440,160L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"></path>   </svg>
+<script src="./script.js"></script>
 </body>
 </html>
 
