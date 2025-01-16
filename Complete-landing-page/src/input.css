@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html,
+  body {
+    height: 100%;
+    width: 100%;
+    scroll-behavior: smooth;
+  }
+
+.container{
+    max-width: 1440px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.custom-gradient{
+    background: linear-gradient(283.4deg, #FFE7CB 1.36%, #FFF9F2 98.8%);
+}
+
+.clip-circle{
+    background: linear-gradient(221.87deg, rgba(255, 231, 203, 0.1) 4.21%, #FFE7CB 85.88%);
+    clip-path: circle(50% at 50% 50%);
+}
+
+
+#feature{
+  background-color: #ffffff8f;
+  box-shadow: var(--sds-size-depth-0) var(--sds-size-depth-025) var(--sds-size-depth-100) var(--sds-size-depth-0) var(--sds-color-black-100);
+  backdrop-filter: blur(17.399999618530273px)
+}
+
+
+#testimonial-play-btn{
+  background: #FFDDDD66;
+  box-shadow: -1px var(--sds-size-depth-025) var(--sds-size-depth-100) var(--sds-size-depth-0) var(--sds-color-black-100);
+  backdrop-filter: blur(14.800000190734863px);
+  border: 1px solid var(--color-white-30, #FFFFFF4D);
+}
+
+.consult-gradient{
+  background: linear-gradient(270.06deg, #FFDDB8 0.8%, #FFF4E8 97.64%);
+}
