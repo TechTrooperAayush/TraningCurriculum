@@ -48,3 +48,23 @@
 .consult-gradient{
   background: linear-gradient(270.06deg, #FFDDB8 0.8%, #FFF4E8 97.64%);
 }
+
+#doctor-section{
+  background: linear-gradient(90.06deg, #FFFFFF 2.36%, #FFF4E8 99.2%);
+}
+
+.pricing-card{
+  background: linear-gradient(180deg, #FFFFFF 24.27%, #FFF4E8 100.06%);
+  backdrop-filter: blur(6.599999904632568px);
+}
+
+#footer{
+  backdrop-filter: blur(13.699999809265137px);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.4) 0%, rgba(255, 251, 248, 0.4) 100%);
+}
+
+.doctor-img:hover .pop-up-card{
+  bottom: 120px;
+  opacity: 1;
+}
+
