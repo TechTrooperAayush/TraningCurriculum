@@ -30,19 +30,8 @@
     clip-path: circle(50% at 50% 50%);
 }
 
-
-#feature{
-  background-color: #ffffff8f;
-  box-shadow: var(--sds-size-depth-0) var(--sds-size-depth-025) var(--sds-size-depth-100) var(--sds-size-depth-0) var(--sds-color-black-100);
-  backdrop-filter: blur(17.399999618530273px)
-}
-
-
 #testimonial-play-btn{
-  background: #FFDDDD66;
   box-shadow: -1px var(--sds-size-depth-025) var(--sds-size-depth-100) var(--sds-size-depth-0) var(--sds-color-black-100);
-  backdrop-filter: blur(14.800000190734863px);
-  border: 1px solid var(--color-white-30, #FFFFFF4D);
 }
 
 .consult-gradient{
@@ -55,16 +44,26 @@
 
 .pricing-card{
   background: linear-gradient(180deg, #FFFFFF 24.27%, #FFF4E8 100.06%);
-  backdrop-filter: blur(6.599999904632568px);
 }
 
-#footer{
-  backdrop-filter: blur(13.699999809265137px);
+ #footer{
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.4) 0%, rgba(255, 251, 248, 0.4) 100%);
-}
+} 
 
 .doctor-img:hover .pop-up-card{
   bottom: 120px;
   opacity: 1;
 }
 
+.headline{
+  @apply font-sora text-[48px] w-[636px] leading-[60.48px] font-semibold;
+}
+
+.btn{
+  @apply h-[60px] w-[308.67px] rounded-[10px] py-[20px] px-[22px] uppercase font-poppins font-semibold text-[16px] leading-[19.2px] text-[#FFFFFF] bg-[#CD0001] hover:transform hover:scale-[1.100] hover:bg-[#ac0000de] duration-300 transition-all ease-linear;
+}
+
+.feature-card{
+  box-shadow: var(--sds-size-depth-0) var(--sds-size-depth-025) var(--sds-size-depth-100) var(--sds-size-depth-0) var(--sds-color-black-100);
+  @apply w-[291px] h-[118px] p-[16px] rounded-[20px] hover:backdrop-blur-[2.399999618530273px] hover:transform hover:scale-[1.0700] transition-all ease-linear backdrop-blur-[17.399999618530273px] bg-[#ffffff8f];
+}
