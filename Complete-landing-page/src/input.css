@@ -46,7 +46,7 @@
   background: linear-gradient(180deg, #FFFFFF 24.27%, #FFF4E8 100.06%);
 }
 
- #footer{
+ .footer{
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.4) 0%, rgba(255, 251, 248, 0.4) 100%);
 } 
 
