@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="container">
+      <section class="wrapper">
+        <section class="cal-container">
+            <div class="display-box">
+                <h4 class="previous-val"></h4>
+                <h1 class="current-solution">0</h1>
+            </div>
+            <section class="btns">
+                <button class="btn c-btn" onclick="displayclear()">C</button>
+                <button class="btn" onclick="display('%')">%</button>
+                <button class="btn Orange-btn" onclick="display('/')">/</button>
+                <button class="btn Numbers" onclick="display('7')">7</button>
+                <button class="btn Numbers" onclick="display('8')">8</button>
+                <button class="btn Numbers" onclick="display('9')">9</button>
+                <button class="btn Orange-btn" onclick="display('*')">x</button>
+                <button class="btn Numbers" onclick="display('4')">4</button>
+                <button class="btn Numbers" onclick="display('5')">5</button>
+                <button class="btn Numbers" onclick="display('6')">6</button>
+                <button class="btn Orange-btn" onclick="display('-')">-</button>
+                <button class="btn Numbers" onclick="display('1')"> 1</button>
+                <button class="btn Numbers" onclick="display('2')">2</button>
+                <button class="btn Numbers" onclick="display('3')">3</button>
+                <button class="btn Orange-btn" onclick="display('+')">+</button>
+                <button class="btn Numbers" onclick="display('0')">0</button>
+                <button class="btn Numbers" onclick="display('.')">.</button>
+                <button class="btn ans-btn Orange-btn" onclick="calculate()">=</button>
+            </section>
+        </section>
+        <section class="history-box">
+            <div class="history-box-head">
+                <h2>History</h2>
+                <button class="btn history-btn" onclick="displaydelete()"> Delete all</button>
+            </div>
+            <div class="history-content">
+
+            </div>
+        </section>
+     </section>
+    </main>
+    <script src="./script.js"></script>
+</body>
+</html>
