@@ -12,7 +12,7 @@
   body {
     height: 100%;
     width: 100%;
-    scroll-behavior: smooth;
+    /* scroll-behavior: smooth; */
   }
 
 .container{
@@ -65,5 +65,5 @@
 
 .feature-card{
   box-shadow: var(--sds-size-depth-0) var(--sds-size-depth-025) var(--sds-size-depth-100) var(--sds-size-depth-0) var(--sds-color-black-100);
-  @apply w-[291px] h-[118px] p-[16px] rounded-[20px] hover:backdrop-blur-[2.399999618530273px] hover:transform hover:scale-[1.0700] transition-all ease-linear backdrop-blur-[17.399999618530273px] bg-[#ffffff8f];
+  @apply  p-[16px] rounded-[20px] hover:backdrop-blur-[2.399999618530273px] hover:transform hover:scale-[1.0700] transition-all ease-linear backdrop-blur-[17.399999618530273px] bg-[#ffffff8f];
 }

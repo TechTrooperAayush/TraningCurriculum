@@ -17,12 +17,18 @@
 <body>
 
 
-    <section class=" flex flex-col justify-center gap-[36px] items-center pb-[36px] h-[895px] bg-[#ffffff]"
+
+    <!------------------------------------------------------------ hero-section start here --------------------------------------------------------->
+
+    <section
+        class=" flex flex-col justify-center lg:gap-[20px] xl:gap-[36px] items-center  xl:h-[895px] bg-[#ffffff] transition-all duration-300 ease-linear"
         id="hero-section">
+
+        <!-------------------------------------------- header ------------------------------------->
 
 
         <header
-            class="h-[100px] w-full xl:p-[20px] p-[10px] flex justify-between lg:justify-center items-center xl:items-stretch  bg-[#ffffff]  relative z-10 shadow-lg transition-all duration-300 ease-linear"
+            class="lg:h-[100px] sm:h-[80px] h-[70px]  w-full xl:p-[20px] p-[10px] flex-wrap lg:flex-nowrap flex justify-between lg:justify-center items-center xl:items-stretch  bg-[#ffffff]  relative z-10 shadow-lg transition-all duration-300 ease-linear"
             id="header">
             <nav class="w-[628px] h-[60px] xl:p-[10px] lg:flex lg:gap-[14px] xl:gap-[24px] justify-center items-center hidden"
                 id="nav-part-1">
@@ -39,16 +45,16 @@
                     Services</a>
             </nav>
             <section
-                class="xl:h-[144px] xl:max-w-[144px] xl:w-[144px] lg:h-[116px] lg:max-w-[116px] lg:p-[16px] lg:mt-16 xl:mt-0 h-20 w-[300px] gap-x-20px items-center  flex xl:p-[20px] lg:bg-transparent lg:backdrop-blur-xl  rounded-[500px]"
+                class="xl:h-[144px] xl:max-w-[144px] xl:w-[144px] lg:h-[116px] lg:max-w-[116px] lg:p-[16px] lg:mt-16 xl:mt-0 sm:h-16 h-14  w-[300px] gap-x-20px items-center  flex xl:p-[20px] lg:bg-white lg:backdrop-blur-xl  rounded-[500px]"
                 id="logo-section">
                 <img src="assets/favicon.png" alt="header-img"
-                    class="xl:max-h-[104px] xl:h-[104px] xl:w-[104px] xl:max-w-[104px] lg:max-h-[86px] lg:max-w-[7rem] object-cover w-20 h-20">
+                    class="xl:max-h-[104px] xl:h-[104px] xl:w-[104px] xl:max-w-[104px] lg:max-h-[86px] lg:max-w-[8rem] object-cover sm:w-16 sm:h-16 lg:w-[8rem] lg:h-[86px]   h-14 w-14">
                 <h2 class="text-[#900C0D] lg:hidden  ml-4 font-poppins text-[28px] font-semibold hidden sm:flex">
                     Bankers Heart
                 </h2>
             </section>
-            <button class=" h-12 w-12 lg:hidden">
-                <img src="assets/menu-3-line.svg" alt="menu-icon" class="h-12 w-12">
+            <button class=" h-10 cursor-pointer w-10 lg:hidden" id="open-menu-btn">
+                <img src="assets/menu-3-line.svg" alt="menu-icon" class="h-10 w-10">
             </button>
             <nav class="w-[660px] h-[60px] xl:p-[10px] lg:flex lg:gap-[14px] xl:gap-[24px] justify-center items-center hidden"
                 id="nav-part-2">
@@ -65,21 +71,63 @@
                     class="font-poppins text-[#1F2A37] hover:text-[#CD0001] transition-colors duration-300  text-sm xl:text-base">Contact
                     Us</a>
             </nav>
+
+            <!----------------------------------------------- pop-up-menu --------------------------------------------->
+
+            <div class=" max-h-[490px] flex-col w-full transition-all duration-500 ease-linear hidden bg-white"
+                id="pop-up-menu">
+                <div class="flex flex-col gap-3 p-[20px] " id="nav-links">
+                    <a href="#"
+                        class="font-poppins text-[#1F2A37] hover:text-[#900C0D] transition-colors duration-300 text-[24px] font-medium border-b-[1px] border-[#E5E7EB] pb-2">Specialties</a>
+                    <a href="#"
+                        class="font-poppins text-[#1F2A37] hover:text-[#900C0D] transition-colors duration-300  text-[24px] font-medium border-b-[1px] border-[#E5E7EB] pb-2">About
+                        Us</a>
+                    <a href="#"
+                        class="font-poppins text-[#1F2A37] hover:text-[#900C0D]  transition-colors duration-300 text-[24px] font-medium border-b-[1px] border-[#E5E7EB] pb-2">Emergency</a>
+                    <a href="#"
+                        class="font-poppins text-[#1F2A37] hover:text-[#900C0D]  transition-colors duration-300 text-[24px] font-medium border-b-[1px] border-[#E5E7EB] pb-2">Treatments
+                        &
+                        Services</a>
+                    <a href="#"
+                        class="font-poppins text-[#1F2A37] hover:text-[#900C0D]  transition-colors duration-300 text-[24px] font-medium border-b-[1px] border-[#E5E7EB] pb-2">Online
+                        Consultation</a>
+                    <a href="#"
+                        class="font-poppins text-[#1F2A37] hover:text-[#900C0D] transition-colors duration-300 text-[24px] font-medium border-b-[1px] border-[#E5E7EB] pb-2">Health
+                        Packages</a>
+                    <a href="#"
+                        class="font-poppins text-[#1F2A37] hover:text-[#900C0D]  transition-colors duration-300 text-[24px] font-medium border-b-[1px] border-[#E5E7EB] pb-2">Health
+                        Tips</a>
+                    <a href="#"
+                        class="font-poppins text-[#1F2A37] hover:text-[#900C0D]  transition-colors duration-300 text-[24px] font-medium ">Contact
+                        Us</a>
+                </div>
+
+            </div>
+
         </header>
+
+        <!-------------------------------------------- header------------------------------------->
+
+
+        <!-------------------------------------------- Slider-section ------------------------------------->
 
 
         <section
-            class="xl:h-[671px] container w-full bg-[#ffffff] relative z-0 flex items-center gap-[10px] xl:gap-[24px] sm:w-full p-[20px] pb-[30px] lg:pb-0 lg:p-0"
+            class="xl:h-[671px] container w-full bg-[#ffffff] relative z-0 flex items-center gap-[10px] xl:gap-[24px] sm:w-full p-[15px] pb-[30px] lg:pb-0 lg:p-0"
             id="slider-section">
             <div class="w-[24px] h-[591px] rounded-tr-[50px] rounded-br-[50px] bg-[#FFCCCC] hidden lg:flex"
                 id="slide-1"></div>
-            <div class="w-[1344px] mt-[170px] lg:mt-0 xl:h-[671px] rounded-[10px] md:rounded-[50px] flex items-center custom-gradient relative overflow-hidden xl:pl-[50px] lg:pl-[10px] pl-0 lg:gap-[35px]  xl:gap-[48px] flex-col lg:flex-row"
+            <div class="w-[1344px] sm:mt-0 lg:mt-0 xl:h-[671px] rounded-[10px] md:rounded-[50px] flex items-center custom-gradient relative overflow-hidden xl:pl-[50px] lg:pl-[10px] pl-0 lg:gap-[35px] xl:gap-[48px] flex-col lg:flex-row sm:gap-[30px] gap-[20px]"
                 id="slide-2">
                 <div
-                    class="clip-circle lg:h-[633px] xl:h-[633px] xl:w-[633px] lg:w-[500px] absolute top-1/2 lg:right-[65%] xl:right-[45%] transform -translate-x-1/2 -translate-y-1/2 ">
+                    class="clip-circle lg:h-[633px] xl:h-[633px] xl:w-[633px] lg:w-[633px] absolute lg:top-1/2 lg:right-[25%] w-[800px] h-[800px]  -top-1 sm:-top-12 left-[50%] lg:left-0 xl:right-[45%] transform -translate-x-1/2 -translate-y-1/2 ">
                 </div>
-                <div class="lg:flex-1 xl:w-[526px] lg:w-[450px] lg:h-auto xl:h-[513px] relative z-10 md:h-[340px] sm:h-[350px] h-[390px] p-[10px] lg:p-0 flex gap-[36px] flex-col lg:items-start items-center "
+
+                <!------------------------------ hero-content-area-------------------------->
+
+                <div class="lg:flex-1 xl:w-[526px] lg:w-[450px] lg:h-auto xl:h-[513px] relative z-10 h-auto p-[10px] lg:p-0 flex gap-[36px] flex-col lg:items-start items-center "
                     id="hero-content-block">
+
                     <div class="flex gap-[17px] flex-col lg:items-start items-center" id="hero-content ">
                         <span
                             class="font-poppins text-[#111928] bg-[white] px-[16px] py-[6px] rounded-[44px] font-[500] border-[#00000005] ">Best
@@ -99,18 +147,33 @@
                         </p>
                     </div>
                     <button
-                        class="uppercase rounded-[10px] bg-[#CD0001] font-poppins text-white w-[234px]  sm:h-[60px] py-[20px] px-[22px] font-[600] hover:transform hover:scale-[1.0300] hover:bg-[#ac0000de] transition-all ease-linear">book
+                        class="sm:h-[60px] h-[50px] w-[234px] sm:rounded-[10px] rounded-[8px] py-[12px] px-[16px] uppercase font-poppins font-semibold text-[16px] leading-[19.2px] text-[#FFFFFF] bg-[#CD0001] hover:transform hover:scale-[1.100] hover:bg-[#ac0000de] duration-300 transition-all ease-linear">book
                         an Appointment</button>
                 </div>
+
+                <!------------------------------ hero-content-area-------------------------->
+
+
+                <!-------------------------------------------- slide-img-section ------------------------------------->
+
                 <div class="lg:flex-4  xl:w-[720px] lg:w-[700px] lg:h-[671px] h-auto  relative" id="hero-img">
                     <img src="assets/hero-img.png" alt="hero-img" class="h-full w-full object-cover">
+
+
+                    <!-------------------------------------------- pop-up-card-section ------------------------------------->
+
                     <section
-                        class="h-[402px] w-[291px] md:flex flex-col gap-[24px] absolute z-40 top-[79px] left-[18px] hidden "
+                        class="h-[402px] w-[291px] md:flex flex-col gap-[24px] absolute z-40 lg:top-[79px] lg:left-[18px] left-0 top-0  hidden "
                         id="feature-section">
-                        <div class="feature-card h-[84px] ">
+
+
+                        <!-------------------- pop up card 1 -------------------->
+
+                        <div
+                            class="feature-card xl:w-[291px] xl:h-[118px] lg:h-[96px] flex items-center justify-center xl:p-[16px] lg:p-[12px]  h-[118px]">
                             <div
-                                class="xl:h-[86px] lg:h-[74px] xl:w-[259px] lg:w-[242px] flex gap-[16px] items-center xl:items-stretch h-[54px]">
-                                <div class="p-[16px] xl:h-[86px] lg:h-[74px] h-[54px]  w-[86px] rounded-[16px] bg-[#FF0303]"
+                                class="xl:h-[86px] lg:h-[74px] xl:w-[259px] lg:w-[242px] flex gap-[16px] justify-center items-center xl:items-stretch h-[74px]">
+                                <div class="p-[16px] xl:h-[86px] lg:h-[70px] h-[80px] flex items-center justify-center  w-[86px] rounded-[16px] bg-[#FF0303]"
                                     id="feature-img">
                                     <img src="assets/phone.png" alt="feature-img" class="">
                                 </div>
@@ -122,10 +185,14 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="feature-card h-[84px]">
+
+                        <!-------------------- pop up card 1 -------------------->
+
+                        <div
+                            class="feature-card xl:w-[291px] xl:h-[118px] lg:h-[96px] flex items-center justify-center xl:p-[16px] lg:p-[12px]  h-[118px]">
                             <div
-                                class="xl:h-[86px] lg:h-[74px] xl:w-[259px] lg:w-[242px] flex gap-[16px] items-center xl:items-stretch h-[54px]">
-                                <div class="p-[16px] xl:h-[86px] lg:h-[74px] h-[54px]  w-[86px] rounded-[16px] bg-[#037EFF]"
+                                class="xl:h-[86px] lg:h-[74px] xl:w-[259px] lg:w-[242px] flex gap-[16px] items-center xl:items-stretch h-[74px]">
+                                <div class="p-[16px] xl:h-[86px] lg:h-[70px] h-[80px] flex items-center justify-center  w-[86px] rounded-[16px] bg-[#037EFF]"
                                     id="feature-img">
                                     <img src="assets/clipboard-list.png" alt="feature-img" class="">
                                 </div>
@@ -137,10 +204,14 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="feature-card h-[84px]">
+
+                        <!-------------------- pop up card 1 -------------------->
+
+                        <div
+                            class="feature-card xl:w-[291px] xl:h-[118px] lg:h-[96px] flex items-center justify-center xl:p-[16px] lg:p-[12px] h-[118px]">
                             <div
-                                class="xl:h-[86px] lg:h-[74px] xl:w-[259px] lg:w-[242px] flex gap-[16px] items-center xl:items-stretch h-[54px]">
-                                <div class="p-[16px] xl:h-[86px] lg:h-[74px] h-[54px]  w-[86px] rounded-[16px] bg-[#FFA200]"
+                                class="xl:h-[86px] lg:h-[74px] xl:w-[259px] lg:w-[242px] flex gap-[16px] items-center xl:items-stretch h-[74px]">
+                                <div class="p-[16px] xl:h-[86px] lg:h-[70px] h-[80px] flex items-center justify-center   w-[86px] rounded-[16px] bg-[#FFA200]"
                                     id="feature-img">
                                     <img src="assets/user.png" alt="feature-img" class="">
                                 </div>
@@ -154,21 +225,41 @@
                         </div>
                     </section>
                 </div>
+                <!-------------------------------------------- pop-up-card-section ------------------------------------->
+
             </div>
+
+            <!-------------------------------------------- slide-img-section ------------------------------------->
+
             <div class="w-[24px] h-[591px] rounded-tl-[50px] rounded-bl-[50px] bg-[#CCE5FF] hidden lg:flex"
                 id="slide-3"></div>
         </section>
+
+        <!-------------------------------------------- Slider-section ------------------------------------->
+
+
+
+        <!-------------------------------------------- dots-section ------------------------------------->
+
         <section class="h-[16px] w-[52px] flex items-center gap-[6px]" id="slider-dot-section">
-            <span class="rounded-[50%] h-[12px] w-[12px] bg-[#DDD1C5]"></span>
-            <span class="rounded-[50%] h-[16px] w-[16px] bg-[#900C0D]"></span>
-            <span class="rounded-[50%] h-[12px] w-[12px] bg-[#DDD1C5]"></span>
+            <span
+                class="rounded-[50%] h-[12px] w-[12px] bg-[#DDD1C5] hover:h-[16px] hover:w-[16px] hover:bg-[#900C0D] cursor-pointer "></span>
+            <span class="rounded-[50%] h-[16px] w-[16px] bg-[#900C0D] cursor-pointer"></span>
+            <span
+                class="rounded-[50%] h-[12px] w-[12px] bg-[#DDD1C5] hover:h-[16px] hover:w-[16px] hover:bg-[#900C0D] cursor-pointer"></span>
         </section>
+
+        <!-------------------------------------------- dots-section ------------------------------------->
+
+
+        <!------------------------------------------------------------ hero-section end here --------------------------------------------------------->
+
     </section>
 
 
     <!------------------------------------------------------------ testimonial-section start here --------------------------------------------------------->
 
-    <section class="h-[900px] lg:h-[819.6px] max-w-full sm:h-[1200px] " id="testimonial-section">
+    <section class="h-[900px] lg:h-[819.6px] max-w-full sm:h-[1000px] " id="testimonial-section">
         <main
             class="container sm:py-[32px] sm:px-[40px] px-[15px] py-[32px] xl:py-[64px] xl:px-[80px] xl:gap-[46px] gap-[34px] flex flex-col bg-white">
 
@@ -193,7 +284,7 @@
                     <img src="assets/testinomial.png" alt="testimonial-img"
                         class="h-auto max-w-[600px] lg:max-w-[500px] xl:max-w-[600px] w-full object-cover rounded-[24px]">
                     <button
-                        class="h-[102px] w-[102px] rounded-[100px] p-[22px] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 hover:transform hover:scale-[1.100] hover:bg-[#ac0000de] duration-300 transition-all ease-linear backdrop-blur-[14.800000190734863px] border-[1px] border-[#FFFFFF4D] bg-[#FFDDDD66]"
+                        class="h-[102px] w-[102px] rounded-[100px] p-[22px] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 hover:transform hover:scale-[1.100] hover:bg-[#ac00001c] duration-300 transition-all ease-linear backdrop-blur-[14.800000190734863px] border-[1px] border-[#FFFFFF4D] bg-[#FFDDDD66]"
                         id="testimonial-play-btn">
                         <img src="assets/testimonial-play.png" alt="testimonial-play-btn" class="h-[56px] w-[56px]">
                     </button>
@@ -207,15 +298,18 @@
                         class="xl:h-[83px] xl:w-[88px] lg:w-[48px]  md:w-[50px] w-[40px] ">
                     <h3
                         class="max-w-[588px] sm:max-w-full lg:max-w-[500px] xl:max-w-[588px] font-poppins xl:text-[24px] lg:text-[19px] text-[16px] md:text-[20px] font-medium xl:leading-[45px] sm:leading-[42px] leading-[35px] text-[#1F2A37]">
-                        "I can't express how grateful I am to the entire team at Bankers Hospital. When my husband,
-                        John, started experiencing severe chest pain, we rushed him to the hospital. From the moment we
+                        "I can't express how grateful I am to the entire team at Bankers Hospital. When my
+                        husband,
+                        John, started experiencing severe chest pain, we rushed him to the hospital. From the
+                        moment we
                         arrived, the care and attention were extraordinary.”
                     </h3>
                     <div class=" max-w-[588px] gap-[4px] flex flex-col" id="patient-name">
                         <h2
                             class="font-sora text-[#1F2A37] font-semibold leading-[30px] sm:text-[24px] text-[20px]  lg:text-[20px] xl:text-[24px]">
                             Peter John</h2>
-                        <span class=" font-poppins text-[#1F2A37] text-[14px] font-normal">Cardiology Patient</span>
+                        <span class=" font-poppins text-[#1F2A37] text-[14px] font-normal">Cardiology
+                            Patient</span>
                     </div>
                 </div>
             </section>
@@ -225,9 +319,12 @@
             <section class="h-[68px] max-w-[1280px] flex items-center justify-between" id="testimonial-btns">
                 <div class="h-[16px] w-[70px] flex gap-[6px] items-center" id="testimonial-slider-dots">
                     <span class="rounded-[50%] h-[16px] w-[16px] bg-[#900C0D]"></span>
-                    <span class="rounded-[50%] h-[12px] w-[12px] bg-[#DDD1C5]"></span>
-                    <span class="rounded-[50%] h-[12px] w-[12px] bg-[#DDD1C5]"></span>
-                    <span class="rounded-[50%] h-[12px] w-[12px] bg-[#DDD1C5]"></span>
+                    <span
+                        class="rounded-[50%] h-[12px] w-[12px] bg-[#DDD1C5] hover:h-[16px] hover:w-[16px] hover:bg-[#900C0D] cursor-pointer"></span>
+                    <span
+                        class="rounded-[50%] h-[12px] w-[12px] bg-[#DDD1C5] hover:h-[16px] hover:w-[16px] hover:bg-[#900C0D] cursor-pointer"></span>
+                    <span
+                        class="rounded-[50%] h-[12px] w-[12px] bg-[#DDD1C5] hover:h-[16px] hover:w-[16px] hover:bg-[#900C0D] cursor-pointer"></span>
                 </div>
                 <div class="h-[68px] w-[284px] flex gap-[16px]  sm:gap-[24px] lg:mr-2 xl:mr-0 sm:items-center justify-end items-center"
                     id="testimonial-slider-btnss">
@@ -251,9 +348,9 @@
 
     <!------------------------------------------------------------ consult-section start here --------------------------------------------------------->
 
-    <section class="consult-gradient w-full xl:h-[593px]" id="consult-section">
+    <section class="consult-gradient w-full xl:h-[593px] transition-all duration-300 ease-linear" id="consult-section">
         <main
-            class="container py-[32px] px-[20px] sm:py-[64px] sm:px-[80px]  flex items-center flex-col-reverse gap-[10px] xl:flex-row lg:flex-row-reverse xl:gap-[73px] md:flex-col-reverse sm:flex-col-reverse md:gap-[23px] sm:gap-[23px] xl:justify-between lg:justify-center justify-center">
+            class="container py-[32px] px-[15px] sm:py-[64px] sm:px-[80px]  flex items-center flex-col-reverse gap-[10px] xl:flex-row lg:flex-row xl:gap-[73px] md:flex-col-reverse sm:flex-col-reverse md:gap-[23px] sm:gap-[23px] xl:justify-between lg:justify-center justify-center">
 
 
             <!-------------------------------------------- consult-section headline ------------------------------------->
@@ -289,19 +386,20 @@
 
     <!------------------------------------------------------------ gallery section start here ------------------------------------------------------------------------------>
 
-    <section class="xl:h-[1413px] w-full" id="gallery-section">
+    <section class="xl:h-[1413px] w-full transition-all duration-300 ease-linear" id="gallery-section">
         <main class="container flex flex-col gap-[46px] md:py-[64px] md:px-[80px] py-[56px] px-[15px]  bg-[#ffffff]">
 
             <!----------------------------------------------- gallery headline --------------------------------------------->
 
             <div class=" max-w-[1280px] flex gap-[24px] flex-col xl:flex-row" id="gallery-content">
                 <h2
-                    class="font-sora md:text-[48px] xl:max-w-[636px] w-full text-[32px] sm:text-[40px] text-start sm:leading-[60.48px] leading-[48px] sm:font-semibold font-bold">
+                    class="font-sora md:text-[48px] xl:max-w-[636px] w-full  text-[36px] text-start sm:leading-[60.48px] leading-[48px] sm:font-semibold font-bold">
                     World-Class Care Close to Home
                 </h2>
                 <p
                     class="xl:max-w-[620px] w-full sm:h-[56px]  sm:my-auto font-inter text-[#4B5563] text-[16px] leading-[28px] font-normal xl:self-end text-start">
-                    Discover advanced technology, modern infrastructure, and compassionate care—all designed to provide
+                    Discover advanced technology, modern infrastructure, and compassionate care—all designed to
+                    provide
                     the best healthcare experience.</p>
             </div>
 
@@ -348,21 +446,22 @@
 
     <!------------------------------------------------------------ doctor-card section start here ------------------------------------------------------------------------------>
 
-    <section class="xl:max-h-[677px] w-full " id="doctor-section">
+    <section class="xl:max-h-[677px] w-full transition-all duration-300 ease-linear " id="doctor-section">
         <main
-            class="container  py-[30px] px-[30px] sm:py-[64px] sm:px-[80px] lg:py-[30px] lg:px-[30px]  xl:py-[64px] xl:px-[80px] flex flex-col sm:gap-[46px] gap-[25px] ">
+            class="container  py-[30px] px-[15px] sm:py-[64px] sm:px-[80px] lg:py-[30px] lg:px-[30px]  xl:py-[64px] xl:px-[80px] flex flex-col sm:gap-[46px] gap-[25px] ">
 
             <!----------------------------------------------- doctor-card section headline --------------------------------------------->
 
             <div class="lg:h-[120px] sm:h-[200px]  max-w-[1280px] flex gap-[24px] flex-col lg:flex-row"
                 id="doctor-section-content">
                 <h2
-                    class="font-sora md:text-[48px] max-w-[636px] text-[32px] sm:text-[40px] text-start sm:leading-[60.48px] leading-[48px] sm:font-semibold font-bold">
+                    class="font-sora md:text-[48px] max-w-[636px] text-4xl text-start sm:leading-[60.48px] leading-[48px] sm:font-semibold font-bold">
                     Compassionate Care from Experts
                 </h2>
                 <p
                     class="max-w-[620px] sm:h-[56px] h-[76px] sm:my-auto font-inter text-[#4B5563] text-[16px] leading-[28px] font-normal lg:self-end">
-                    Our skilled doctors provide personalized treatment, ensuring your health and well-being at every
+                    Our skilled doctors provide personalized treatment, ensuring your health and well-being at
+                    every
                     step.</p>
             </div>
 
@@ -456,7 +555,7 @@
 
     <!----------------------------------------------------------- pricing-card section start here ------------------------------------------------------------------------------>
 
-    <section class="xl:max-h-[961px] w-full" id="pricing-section">
+    <section class="xl:max-h-[961px] w-full transition-all duration-300 ease-linear" id="pricing-section">
         <main
             class="container px-[15px] py-[40px] flex flex-col sm:gap-[46px] gap-[25px] items-center  sm:py-[64px] sm:px-[80px] lg:py-[64px] lg:px-[80px] xl:py-[64px] xl:px-[80px]">
 
@@ -464,12 +563,13 @@
 
             <div class=" max-w-[1280px] flex gap-[24px] flex-col xl:flex-row w-full" id="pricing-section-content">
                 <h2
-                    class="font-sora md:text-[48px] max-w-[636px] text-[32px] sm:text-[40px] text-start sm:leading-[60.48px] leading-[48px] sm:font-semibold font-bold">
+                    class="font-sora md:text-[48px] max-w-[636px] text-4xl text-start sm:leading-[60.48px] leading-[48px] sm:font-semibold font-bold">
                     Comprehensive Care, Tailored for You
                 </h2>
                 <p
                     class="max-w-[620px] sm:h-[56px] h-[76px] sm:my-auto font-inter text-[#4B5563] text-[16px] leading-[28px] font-normal 	">
-                    Explore our specialized health checkup packages designed to keep you and your loved ones healthy.
+                    Explore our specialized health checkup packages designed to keep you and your loved ones
+                    healthy.
                 </p>
             </div>
 
@@ -482,7 +582,7 @@
 
                 <!---------------------------------- Card-1 --------------------------------- -->
 
-                <div class="sm:max-w-[394.67px] max-w-[360px] h-[622px] sm:h-[667px] rounded-[24px] border-[1px] py-[20px] sm:py-[40px] px-[3px]  border-[#dbdbdba9] backdrop-blur-[6.599999904632568px] pricing-card"
+                <div class="sm:max-w-[394.67px] max-w-[360px] h-[622px] sm:h-[667px] rounded-[24px] border-[1px] py-[20px] sm:py-[40px] px-[3px]  border-[#F3F4F6] backdrop-blur-[6.599999904632568px] pricing-card"
                     id="card-1">
                     <div class="wrapper max-w-[389px] h-[587px] px-[40px] flex items-center justify-center">
                         <div class="h-[587px] max-w-[389px] flex flex-col gap-[25px] ">
@@ -501,28 +601,33 @@
                                     ₹15,000
                                 </h1>
                                 <div class=" h-[298px] w-[310px] flex flex-col gap-[24px]">
-                                    <h4 class="font-dmsans text-[18px] text-[#111928] font-bold leading-[20px]">What’s
+                                    <h4 class="font-dmsans text-[18px] text-[#111928] font-bold leading-[20px]">
+                                        What’s
                                         included</h4>
                                     <div class="h-[254px] w-[310px] flex flex-col gap-[16px]">
                                         <span
                                             class=" h-[29x] font-poppins text-[18px] text-[#4B5563] font-medium leading-[28.8px] flex"><i><img
                                                     src="assets/Check Circle.svg" alt="checkmark-img"
-                                                    class="h-[26px] w-[26px]"></i> &nbsp;Complete Blood Count (CBC)
+                                                    class="h-[26px] w-[26px]"></i> &nbsp;Complete Blood Count
+                                            (CBC)
                                         </span>
                                         <span
                                             class=" h-[29x] font-poppins text-[18px] text-[#4B5563] font-medium leading-[28.8px] flex"><i><img
                                                     src="assets/Check Circle.svg" alt="checkmark-img"
-                                                    class="h-[26px] w-[26px]"></i> &nbsp; Liver Function Test (LFT)
+                                                    class="h-[26px] w-[26px]"></i> &nbsp; Liver Function Test
+                                            (LFT)
                                         </span>
                                         <span
                                             class=" h-[29x] font-poppins text-[18px] text-[#4B5563] font-medium leading-[28.8px] flex"><i><img
                                                     src="assets/Check Circle.svg" alt="checkmark-img"
-                                                    class="h-[26px] w-[26px]"></i> &nbsp; Kidney Function Test (KFT)
+                                                    class="h-[26px] w-[26px]"></i> &nbsp; Kidney Function Test
+                                            (KFT)
                                         </span>
                                         <span
                                             class=" h-[29x] font-poppins text-[18px] text-[#4B5563] font-medium leading-[28.8px] flex"><i><img
                                                     src="assets/Check Circle.svg" alt="checkmark-img"
-                                                    class="h-[26px] w-[26px]"></i> &nbsp; ECG (Heart Screening)</span>
+                                                    class="h-[26px] w-[26px]"></i> &nbsp; ECG (Heart
+                                            Screening)</span>
                                         <span
                                             class=" h-[29x] font-poppins text-[18px] text-[#4B5563] font-medium leading-[28.8px] flex"><i><img
                                                     src="assets/Check Circle.svg" alt="checkmark-img"
@@ -530,7 +635,8 @@
                                         <span
                                             class=" h-[29x] font-poppins text-[18px] text-[#4B5563] font-medium leading-[28.8px] flex"><i><img
                                                     src="assets/Check Circle.svg" alt="checkmark-img"
-                                                    class="h-[26px] w-[26px]"></i> &nbsp; Diet Consultation</span>
+                                                    class="h-[26px] w-[26px]"></i> &nbsp; Diet
+                                            Consultation</span>
                                     </div>
                                 </div>
                             </div>
@@ -545,7 +651,7 @@
 
                 <!---------------------------------- Card-2 --------------------------------- -->
 
-                <div class="sm:max-w-[394.67px] max-w-[360px] h-[622px]  sm:h-[667px]   rounded-[24px] border-[1px]py-[20px] sm:py-[40px]  px-[3px]  border-[#dbdbdba9] backdrop-blur-[6.599999904632568px] pricing-card"
+                <div class="sm:max-w-[394.67px] max-w-[360px] h-[622px]  sm:h-[667px]   rounded-[24px] border-[1px] py-[20px] sm:py-[40px]  px-[3px]  border-[#F3F4F6] backdrop-blur-[6.599999904632568px] pricing-card"
                     id="card-1">
                     <div class="wrapper max-w-[389px] h-[587px] px-[40px] flex items-center justify-center">
                         <div class="h-[587px] max-w-[389px] flex flex-col gap-[25px] ">
@@ -564,32 +670,38 @@
                                     ₹5,000
                                 </h1>
                                 <div class=" h-[298px] w-[310px] flex flex-col gap-[24px]">
-                                    <h4 class="font-dmsans text-[18px] text-[#111928] font-bold leading-[20px]">What’s
+                                    <h4 class="font-dmsans text-[18px] text-[#111928] font-bold leading-[20px]">
+                                        What’s
                                         included</h4>
                                     <div class="h-[254px] w-[310px] flex flex-col gap-[16px]">
                                         <span
                                             class=" h-[29x] font-poppins text-[18px] text-[#4B5563] font-medium leading-[28.8px] flex"><i><img
                                                     src="assets/Check Circle.svg" alt="checkmark-img"
-                                                    class="h-[26px] w-[26px]"></i> &nbsp;Fasting Blood Sugar (FBS)
+                                                    class="h-[26px] w-[26px]"></i> &nbsp;Fasting Blood Sugar
+                                            (FBS)
                                         </span>
                                         <span
                                             class=" h-[29x] font-poppins text-[18px] text-[#4B5563] font-medium leading-[28.8px] flex"><i><img
                                                     src="assets/Check Circle.svg" alt="checkmark-img"
-                                                    class="h-[26px] w-[26px]"></i> &nbsp; HbA1c Test (Sugar Levels)
+                                                    class="h-[26px] w-[26px]"></i> &nbsp; HbA1c Test (Sugar
+                                            Levels)
                                         </span>
                                         <span
                                             class=" h-[29x] font-poppins text-[18px] text-[#4B5563] font-medium leading-[28.8px] flex"><i><img
                                                     src="assets/Check Circle.svg" alt="checkmark-img"
-                                                    class="h-[26px] w-[26px]"></i> &nbsp;Urine Routine & Microalbumin
+                                                    class="h-[26px] w-[26px]"></i> &nbsp;Urine Routine &
+                                            Microalbumin
                                         </span>
                                         <span
                                             class=" h-[29x] font-poppins text-[18px] text-[#4B5563] font-medium leading-[28.8px] flex"><i><img
                                                     src="assets/Check Circle.svg" alt="checkmark-img"
-                                                    class="h-[26px] w-[26px]"></i> &nbsp; Diabetic Retinopathy</span>
+                                                    class="h-[26px] w-[26px]"></i> &nbsp; Diabetic
+                                            Retinopathy</span>
                                         <span
                                             class=" h-[29x] font-poppins text-[18px] text-[#4B5563] font-medium leading-[28.8px] flex"><i><img
                                                     src="assets/Check Circle.svg" alt="checkmark-img"
-                                                    class="h-[26px] w-[26px]"></i> &nbsp; Foot Examination </span>
+                                                    class="h-[26px] w-[26px]"></i> &nbsp; Foot Examination
+                                        </span>
                                         <span
                                             class=" h-[29x] font-poppins text-[18px] text-[#4B5563] font-medium leading-[28.8px] flex"><i><img
                                                     src="assets/Check Circle.svg" alt="checkmark-img"
@@ -609,7 +721,7 @@
 
                 <!---------------------------------- Card-3 --------------------------------- -->
 
-                <div class="sm:max-w-[394.67px]  max-w-[360px] h-[622px]  sm:h-[667px]   rounded-[24px] border-[1px] py-[20px] sm:py-[40px] px-[3px] border-[#dbdbdba9] pricing-card backdrop-blur-[6.599999904632568px]"
+                <div class="sm:max-w-[394.67px]  max-w-[360px] h-[622px]  sm:h-[667px]   rounded-[24px] border-[1px] py-[20px] sm:py-[40px] px-[3px] border-[#F3F4F6] pricing-card backdrop-blur-[6.599999904632568px]"
                     id="card-3">
                     <div class="wrapper max-w-[389px] h-[587px] px-[40px] flex items-center justify-center">
                         <div class="h-[587px] max-w-[389px]  flex flex-col gap-[25px]">
@@ -628,27 +740,32 @@
                                     ₹8,000
                                 </h1>
                                 <div class=" h-[298px] w-[310px] flex flex-col gap-[24px]">
-                                    <h4 class="font-dmsans text-[18px] text-[#111928] font-bold leading-[20px]">What’s
+                                    <h4 class="font-dmsans text-[18px] text-[#111928] font-bold leading-[20px]">
+                                        What’s
                                         included</h4>
                                     <div class="h-[254px] w-[310px] flex flex-col gap-[16px]">
                                         <span
                                             class=" h-[29x] font-poppins text-[18px] text-[#4B5563] font-medium leading-[28.8px] flex"><i><img
                                                     src="assets/Check Circle.svg" alt="checkmark-img"
-                                                    class="h-[26px] w-[26px]"></i> &nbsp; ECG (Electrocardiogram)
+                                                    class="h-[26px] w-[26px]"></i> &nbsp; ECG
+                                            (Electrocardiogram)
                                         </span>
                                         <span
                                             class=" h-[29x] font-poppins text-[18px] text-[#4B5563] font-medium leading-[28.8px] flex"><i><img
                                                     src="assets/Check Circle.svg" alt="checkmark-img"
-                                                    class="h-[26px] w-[26px]"></i> &nbsp; 2D Echo with Doppler </span>
-                                        <span
-                                            class=" h-[29x] font-poppins text-[18px] text-[#4B5563] font-medium leading-[28.8px] flex"><i><img
-                                                    src="assets/Check Circle.svg" alt="checkmark-img"
-                                                    class="h-[26px] w-[26px]"></i> &nbsp; Lipid Profile (Cholesterol)
+                                                    class="h-[26px] w-[26px]"></i> &nbsp; 2D Echo with Doppler
                                         </span>
                                         <span
                                             class=" h-[29x] font-poppins text-[18px] text-[#4B5563] font-medium leading-[28.8px] flex"><i><img
                                                     src="assets/Check Circle.svg" alt="checkmark-img"
-                                                    class="h-[26px] w-[26px]"></i> &nbsp; TMT (Stress Test)</span>
+                                                    class="h-[26px] w-[26px]"></i> &nbsp; Lipid Profile
+                                            (Cholesterol)
+                                        </span>
+                                        <span
+                                            class=" h-[29x] font-poppins text-[18px] text-[#4B5563] font-medium leading-[28.8px] flex"><i><img
+                                                    src="assets/Check Circle.svg" alt="checkmark-img"
+                                                    class="h-[26px] w-[26px]"></i> &nbsp; TMT (Stress
+                                            Test)</span>
                                         <span
                                             class=" h-[29x] font-poppins text-[18px] text-[#4B5563] font-medium leading-[28.8px] flex"><i><img
                                                     src="assets/Check Circle.svg" alt="checkmark-img"
@@ -657,7 +774,8 @@
                                         <span
                                             class=" h-[29x] font-poppins text-[18px] text-[#4B5563] font-medium leading-[28.8px] flex"><i><img
                                                     src="assets/Check Circle.svg" alt="checkmark-img"
-                                                    class="h-[26px] w-[26px]"></i> &nbsp; Endocrinologist Consultation
+                                                    class="h-[26px] w-[26px]"></i> &nbsp; Endocrinologist
+                                            Consultation
                                         </span>
                                     </div>
                                 </div>
@@ -679,7 +797,7 @@
 
     <!------------------------------------------------------------ blog section start here ------------------------------------------------------------------------------>
 
-    <section class="xl:h-[977px] w-full " id="blog-section">
+    <section class="xl:h-[977px] w-full transition-all duration-300 ease-linear" id="blog-section">
         <main class="container pt-[64px] pb-[164px] px-[15px] sm:px-[80px] flex flex-col items-center  gap-[46px]">
 
             <!----------------------------------------------- blog section headline --------------------------------------------->
@@ -687,12 +805,13 @@
             <div class="max-w-[1280px] w-full flex gap-[24px] flex-col xl:flex-row px-[5px] sm:px-0"
                 id="blog-section-content">
                 <h2
-                    class="font-sora text-[36px] sm:text-[48px] leading-[60.48px] font-semibold text-center lg:text-start ">
+                    class="font-sora text-[36px] lg:text-[48px] leading-[60.48px] font-semibold text-center lg:text-start ">
                     Stay Informed, Stay Healthy
                 </h2>
                 <p
                     class="max-w-[620px] xl:my-auto font-inter text-[#4B5563] text-[16px] leading-[28px] text-center lg:text-start font-normal">
-                    Explore our latest articles on wellness, heart health, and disease management. Stay up to date with
+                    Explore our latest articles on wellness, heart health, and disease management. Stay up to
+                    date with
                     expert advice, patient stories, and tips for maintaining a healthier lifestyle.</p>
             </div>
 
@@ -710,9 +829,11 @@
                     </figure>
                     <div class="h-[209px] max-w-[405.33px] p-[24px] flex flex-col gap-[12px]" id="bolg-card-content">
                         <div class="h-[108px] max-w-[357.33px] flex flex-col gap-[10px]">
-                            <h2 class="font-semibold font-sora text-[#111928] text-[20px] leading-[25px]">How to Detect
+                            <h2 class="font-semibold font-sora text-[#111928] text-[20px] leading-[25px]">How to
+                                Detect
                                 Early Signs of Heart Disease</h2>
-                            <p class="font-normal font-poppins text-[16px] leading-[24px] text-[#6B7280]">Spotting
+                            <p class="font-normal font-poppins text-[16px] leading-[24px] text-[#6B7280]">
+                                Spotting
                                 symptoms early can save lives. Find out what to watch for.</p>
                         </div>
                         <div class="h-[41px] flex gap-[12px] items-center">
@@ -736,9 +857,11 @@
                     </figure>
                     <div class="h-[209px] max-w-[405.33px] p-[24px] flex flex-col gap-[12px]" id="bolg-card-content">
                         <div class="h-[108px] max-w-[357.33px] flex flex-col gap-[10px]">
-                            <h2 class="font-semibold font-sora text-[#111928] text-[20px] leading-[25px]">Heart-Friendly
+                            <h2 class="font-semibold font-sora text-[#111928] text-[20px] leading-[25px]">
+                                Heart-Friendly
                                 Foods You Must Include in Your Diet</h2>
-                            <p class="font-normal font-poppins text-[16px] leading-[24px] text-[#6B7280]">Discover 10
+                            <p class="font-normal font-poppins text-[16px] leading-[24px] text-[#6B7280]">
+                                Discover 10
                                 superfoods that promote a healthy heart.</p>
                         </div>
                         <div class="h-[41px] flex gap-[12px] items-center">
@@ -762,9 +885,11 @@
                     </figure>
                     <div class="h-[209px] max-w-[405.33px] p-[24px] flex flex-col gap-[12px]" id="bolg-card-content">
                         <div class="h-[108px] max-w-[357.33px] flex flex-col gap-[10px]">
-                            <h2 class="font-semibold font-sora text-[#111928] text-[20px] leading-[25px]">The Role of
+                            <h2 class="font-semibold font-sora text-[#111928] text-[20px] leading-[25px]">The
+                                Role of
                                 Exercise in Cardiac Health</h2>
-                            <p class="font-normal font-poppins text-[16px] leading-[24px] text-[#6B7280]">Learn how
+                            <p class="font-normal font-poppins text-[16px] leading-[24px] text-[#6B7280]">Learn
+                                how
                                 regular physical activity can strengthen your heart.</p>
                         </div>
                         <div class="h-[41px] flex gap-[12px] items-center">
@@ -792,7 +917,7 @@
     <!------------------------------------------------------------ footer-section start here --------------------------------------------------------->
 
     <footer
-        class="xl:h-[557px] w-full  border-[#E5E7EB] border-[1px] rounded-tl-[10px] p-[10px] sm:p-0 rounded-tr-[10px] backdrop-blur-[13.699999809265137px]"
+        class="xl:h-[557px] w-full  border-[#E5E7EB] border-[1px] transition-all duration-300 ease-linear rounded-tl-[10px] p-[10px] sm:p-0 rounded-tr-[10px] backdrop-blur-[13.699999809265137px]"
         id="footer">
         <main class="container w-full flex justify-center footer">
 
